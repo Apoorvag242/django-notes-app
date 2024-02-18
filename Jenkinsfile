@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo "Deploying the container"
                 // Add your deployment steps here
-                sh "docker-compose down && docker-compose uo -d "
+                sh "docker-compose down && docker-compose up -d "
             }
         }
     }
